@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajeswari's Anti-Gravity Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          to bottom,
+          #000428,
+          #004e92
+        ); /* Space theme */
+        color: white;
+        overflow-x: hidden;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        text-align: center;
+        z-index: 10;
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+      }
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        animation: antiGravity 4s ease-in-out infinite alternate;
+      }
+      @keyframes antiGravity {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-20px);
+        }
+      }
+      .hero h1 {
+        font-size: 4rem;
+        margin: 0;
+      }
+      .projects {
+        padding: 5rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        animation: drift 6s ease-in-out infinite;
+      }
+      .project-card:hover {
+        transform: translateY(-15px) rotate(2deg); /* Anti-gravity hover */
+      }
+      @keyframes drift {
+        0%,
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+        33% {
+          transform: translateX(10px) translateY(-5px);
+        }
+        66% {
+          transform: translateX(-10px) translateY(5px);
+        }
+      }
+      .about,
+      .contact {
+        padding: 5rem 2rem;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h2>Raji's Anti-Gravity Portfolio</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Defy Gravity with Rajeswari</h1>
+        <p>
+          Creative designer floating through digital space. Exploring
+          anti-gravity concepts in web and art.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Raji</h2>
+      <p>
+        I'm Raji, a passionate creator inspired by physics-defying wonders. From
+        UI/UX that feels weightless to illustrations of cosmic adventures, my
+        work lifts ideas off the ground. Based in [Your City], with 5+ years in
+        digital design.
+      </p>
+      <div style="animation: orbit 5s linear infinite">
+        🌌 (Orbiting skill: CSS Animations)
+      </div>
+    </section>
+
+    <style>
+      @keyframes orbit {
+        from {
+          transform: rotate(0deg) translateX(50px) rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg) translateX(50px) rotate(-360deg);
+        }
+      }
+    </style>
+
+    <section id="projects" class="projects">
+      <div class="project-card">
+        <h3>Project 1: Zero-G Website</h3>
+        <p>A landing page with floating particles. Built with HTML/CSS/JS.</p>
+        <img
+          src="https://via.placeholder.com/300x200?text=Zero-G+Site"
+          alt="Zero-G Website"
+          style="width: 100%; border-radius: 5px"
+        />
+      </div>
+      <div class="project-card">
+        <h3>Project 2: Anti-Gravity Art</h3>
+        <p>
+          Digital illustrations of levitating objects. Tools: Adobe Illustrator
+          & Procreate.
+        </p>
+        <img
+          src="https://via.placeholder.com/300x200?text=Anti-Gravity+Art"
+          alt="Art Project"
+          style="width: 100%; border-radius: 5px"
+        />
+      </div>
+      <div class="project-card">
+        <h3>Project 3: Floating App UI</h3>
+        <p>
+          Mobile app prototype with hover effects. Using Figma and React Native.
+        </p>
+        <img
+          src="https://via.placeholder.com/300x200?text=Floating+UI"
+          alt="App UI"
+          style="width: 100%; border-radius: 5px"
+        />
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Ready to launch a project? Email: raji@antigravity.com | LinkedIn:
+        /in/raji
+      </p>
+      <form style="max-width: 400px; margin: 0 auto">
+        <input
+          type="text"
+          placeholder="Your Name"
+          style="
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+          "
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          style="
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+          "
+        />
+        <textarea
+          placeholder="Message"
+          style="
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            height: 100px;
+          "
+        ></textarea>
+        <button
+          type="submit"
+          style="
+            background: #004e92;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: float 2s ease-in-out infinite;
+          "
+        >
+          Launch Message (Anti-Gravity Send)
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Rocky. All rights reserved. Floating eternally in the
+        digital void.
+      </p>
+    </footer>
+  </body>
+</html>
